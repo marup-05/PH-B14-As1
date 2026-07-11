@@ -12,7 +12,7 @@ nav {
     background-color: antiquewhite;
 }
 
-ul {
+.menu {
     display: flex;
     list-style: none;
     gap: 18px;
@@ -78,11 +78,6 @@ header {
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .speakers {
     max-width: 1400px;
     margin: 50px auto;
@@ -118,6 +113,7 @@ header {
 .content {
     padding: 25px;
 }
+
 .content span {
     color: #2563EB;
     font-size: 15px;
@@ -128,8 +124,101 @@ header {
     margin-top: 12px;
     font-size: 25px;
 }
+
 .content p {
     margin-top: 10px;
     color: #575757;
     font-size: 16px;
+}
+
+.pricing {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #575757;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.plan {
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.plan small {
+    color: #575757;
+    font-weight: bold;
+}
+
+.plan h1 {
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+.price-text {
+    color: #575757;
+    margin-bottom: 15px;
+}
+
+.plan hr {
+    border: none;
+    border-top: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+
+
+.plan ul li {
+    margin-bottom: 15px;
+}
+
+.plan button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: 1px solid #0D1B2A;
+    border-radius: 8px;
+    background: white;
+    color: #2563EB;
+    cursor: pointer;
+}
+
+.featured {
+    background-color: #0D1B2A;
+    color: white;
+}
+
+.featured .price-text {
+    color: #575757;
+}
+
+.featured small {
+    color: #2563EB;
+}
+
+.featured hr {
+    border-top: 1px solid white;
+}
+
+.featured button {
+    background: #2563EB;
+    color: white;
+    border: none;
 }
